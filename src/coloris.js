@@ -975,7 +975,7 @@
     `<div id="clr-color-area" class="clr-gradient" role="application" aria-label="${settings.a11y.instruction}">`+
       '<div id="clr-color-marker" class="clr-marker" tabindex="0"></div>'+
     '</div>'+
-    '<div class="clr-hue">'+
+    '<div class="clr-hue" style="display:none">'+
       `<input id="clr-hue-slider" name="clr-hue-slider" type="range" min="0" max="360" step="1" aria-label="${settings.a11y.hueSlider}">`+
       '<div id="clr-hue-marker"></div>'+
     '</div>'+
