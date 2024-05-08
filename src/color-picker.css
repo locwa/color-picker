@@ -33,6 +33,11 @@
   margin: auto;
 }
 
+.ai-submission:hover{
+  background-color: #367e3a;
+  cursor: pointer;
+}
+
 .clr-picker[data-inline="true"] {
   position: relative;
 }

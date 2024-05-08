@@ -1267,7 +1267,7 @@
 // Get the color values when button is clicked
 let colorVals = "";
 
-document.addEventListener('coloris:pick', event => {
+document.addEventListener('color-picker:pick', event => {
     colorVals = event.detail.color;
 });
 
