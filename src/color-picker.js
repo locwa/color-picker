@@ -4,6 +4,8 @@
  * https://github.com/mdbassit/Coloris
  */
 
+let colorVals = "";
+
 ((window, document, Math, undefined) => {
   const ctx = document.createElement('canvas').getContext('2d');
   const currentColor = { r: 0, g: 0, b: 0, h: 0, s: 0, v: 0, a: 1 };
@@ -597,7 +599,7 @@
       settings.onChange.call(window, color, currentEl);
     }
 
-    document.dispatchEvent(new CustomEvent('coloris:pick', { detail: { color, currentEl } }));
+    document.dispatchEvent(new CustomEvent('color-picker:pick', { detail: { color, currentEl } }));
   }
 
   /**
@@ -1261,16 +1263,11 @@
   // Init the color picker when the DOM is ready
   DOMReady(init);
 
+  // Get the color values when button is clicked
+  colorVals = RGBAToHex(currentColor);
+
 })(window, document, Math);
 
-
-// Get the color values when button is clicked
-let colorVals = "";
-
-document.addEventListener('color-picker:pick', event => {
-    colorVals = event.detail.color;
-});
-
 function submitColorValue() {
-    console.log(colorVals);
+  console.log(colorVals);
 }
