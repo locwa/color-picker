@@ -6,6 +6,7 @@
 
 let originalColorVals = "";
 
+
 ((window, document, Math, undefined) => {
   const ctx = document.createElement('canvas').getContext('2d');
   const currentColor = { r: 0, g: 0, b: 0, h: 0, s: 0, v: 0, a: 1 };
@@ -1269,18 +1270,17 @@ let originalColorVals = "";
 })(window, document, Math);
 
 let colorVals = "";
+let hexValues = "";
 
 document.addEventListener('color-picker:pick', event => {
   colorVals = event.detail.color;
 });
 
-export function submitColorValue() {
-
- if (colorVals == 0) {
-    console.log(originalColorVals);
-    return originalColorVals;
-  } else {
-    console.log(colorVals);
-    return colorVals;
-  } 
+function submitColorValue() {
+  if (colorVals == 0) {
+     hexValues = originalColorVals;
+   } else {
+     hexValues = colorVals;
+   } 
 }
+
