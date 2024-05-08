@@ -2,7 +2,7 @@
   display: none;
   flex-wrap: wrap;
   position: absolute;
-  width: 200px;
+  width: 250px;
   z-index: 1000;
   border-radius: 10px;
   background-color: #fff;
@@ -17,6 +17,20 @@
 .clr-picker.clr-open,
 .clr-picker[data-inline="true"] {
   display: flex;
+}
+
+.ai-submission{
+  width: 90%;
+  padding: 0 15px;
+  text-wrap: wrap;
+  background-color: #43A047;
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  margin: auto;
 }
 
 .clr-picker[data-inline="true"] {
