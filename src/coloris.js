@@ -979,7 +979,7 @@
       `<input id="clr-hue-slider" name="clr-hue-slider" type="range" min="0" max="360" step="1" aria-label="${settings.a11y.hueSlider}">`+
       '<div id="clr-hue-marker"></div>'+
     '</div>'+
-    '<div class="clr-alpha">'+
+    '<div class="clr-alpha" style="display:none">'+
       `<input id="clr-alpha-slider" name="clr-alpha-slider" type="range" min="0" max="100" step="1" aria-label="${settings.a11y.alphaSlider}">`+
       '<div id="clr-alpha-marker"></div>'+
       '<span></span>'+
