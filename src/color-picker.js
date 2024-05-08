@@ -1278,7 +1278,11 @@ function submitColorValue() {
 
  if (colorVals == 0) {
     console.log(originalColorVals);
+    return originalColorVals;
   } else {
     console.log(colorVals);
+    return colorVals;
   } 
 }
+
+export { submitColorValue };
