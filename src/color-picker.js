@@ -1274,7 +1274,7 @@ document.addEventListener('color-picker:pick', event => {
   colorVals = event.detail.color;
 });
 
-function submitColorValue() {
+export function submitColorValue() {
 
  if (colorVals == 0) {
     console.log(originalColorVals);
@@ -1284,5 +1284,3 @@ function submitColorValue() {
     return colorVals;
   } 
 }
-
-export { submitColorValue };
